@@ -35,6 +35,11 @@ python main.py
 1. Install PyInstaller in the same environment as PyQt5 and `pypdf`, then run `PyDiagram.bat`. It produces `dist\PyDiagram\PyDiagram.exe` and bundles the whole `help` folder (all languages and images).
 2. Open `PyDiagram.iss` in Inno Setup and compile it to produce the installer.
 
+## Screenshot
+
+![PyDiagram screenshot](screenshots/screenshot1.png)
+
+
 ## Help
 
 `F1` (or the Help button) opens the help in the interface's current language, not the operating system's. The pages live in one folder per language, all with the same file names, and share the screenshots in `help/images`:
