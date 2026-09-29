@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inserting LaTeX Equations</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Inserting LaTeX Equations</h1>
+
+<p align="center"><img src="../images/latex-equations.png" width="640" alt="Screenshot: a LaTeX equation inserted in a diagram, with a title in English, Arabic and French"></p>
+
+<p>An Image shape's Properties dialog has a
+<b>Create from LaTeX...</b> button next to the usual
+<b>Browse...</b> file picker (see
+<a href="properties.html">Shape properties</a>). It opens a small
+equation editor that renders a LaTeX equation to an image and inserts
+it exactly as if you had browsed to a picture file.</p>
+
+<h2>Using the editor</h2>
+<ul>
+<li><b>Preamble</b> &ndash; extra LaTeX preamble lines, e.g.
+<code>\usepackage{amsthm}</code>, for any packages the content
+below needs.</li>
+<li><b>LaTeX</b> &ndash; type any LaTeX content: a math expression,
+e.g. <code>\frac{-b \pm \sqrt{b^2-4ac}}{2a}</code>, or a complete
+block of text and math such as a theorem
+(<code>\begin{theorem}...\end{theorem}</code>) using the preamble
+above.</li>
+<li><b>Text Color</b> / <b>Background Color</b> &ndash; the rendered
+image's colors.</li>
+<li><b>Padding</b> &ndash; blank space (in points) around the
+equation.</li>
+<li><b>DPI</b> &ndash; resolution of the rendered image; higher
+values look sharper when the shape is enlarged, at the cost of a
+bigger file.</li>
+<li><b>Render Preview</b> &ndash; updates the preview area below with
+the current settings.</li>
+<li><b>Insert</b> &ndash; only enabled once a render has succeeded;
+inserts the result and returns to the Properties dialog.</li>
+</ul>
+
+<h2>Requirements</h2>
+<p>For this feature to work you must install either <b>MiKTeX</b>
+(<a href="https://miktex.org">https://miktex.org</a>) or <b>TeX Live</b>
+(<a href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a>).
+Rendering compiles the equation with <code>pdflatex</code> and
+rasterizes it with <code>pdftocairo</code> (part of Poppler), and both
+programs must be found on the system's <code>PATH</code>; if
+<code>pdftocairo</code> is not included with your LaTeX distribution,
+install Poppler as well.</p>
+
+<p>Rendered images are cached: re-rendering the exact same equation
+with the same settings reuses the cached image instantly rather than
+invoking <code>pdflatex</code> again. Reopening
+<b>Create from LaTeX...</b> on an Image shape that already holds a
+rendered equation prefills the editor with the equation and settings
+that produced it, ready to tweak further.</p>
+
+<p class="nav">
+<a href="index.html">&larr; Back to Help</a>
+</p>
+
+</body>
+</html>

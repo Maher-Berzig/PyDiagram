@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>إدراج معادلات LaTeX</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body dir="rtl">
+
+<h1 dir="rtl">إدراج معادلات LaTeX</h1>
+
+<p align="center"><img src="../images/latex-equations.png" width="640" alt="لقطة شاشة: معادلة LaTeX مُدرجة في مخطط، مع عنوان بالإنجليزية والعربية والفرنسية"></p>
+
+<p dir="rtl">يحتوي مربع حوار خصائص شكل الصورة على زر
+<b>إنشاء من LaTeX...</b> بجانب منتقي الملفات المعتاد
+<b>استعراض...</b> (راجع <a href="properties.html">خصائص الأشكال</a>).
+يفتح محرر معادلات صغيرًا يحوّل معادلة LaTeX إلى صورة ويدرجها تمامًا كما
+لو كنت قد استعرضت للوصول إلى ملف صورة.</p>
+
+<h2 dir="rtl">استخدام المحرر</h2>
+<ul dir="rtl">
+<li dir="rtl"><b>المقدمة</b> &ndash; أسطر إضافية لمقدمة LaTeX، مثل
+<code>‎\usepackage{amsthm}‎</code>، للحزم التي يحتاجها المحتوى
+أدناه.</li>
+<li dir="rtl"><b>LaTeX</b> &ndash; اكتب أي محتوى LaTeX: تعبيرًا رياضيًا، مثل
+<code>‎\frac{-b \pm \sqrt{b^2-4ac}}{2a}‎</code>، أو كتلة كاملة من النص
+والرياضيات مثل مبرهنة
+(<code>‎\begin{theorem}...\end{theorem}‎</code>) تستخدم المقدمة
+أعلاه.</li>
+<li dir="rtl"><b>لون النص</b> / <b>لون الخلفية</b> &ndash; ألوان الصورة
+الناتجة.</li>
+<li dir="rtl"><b>الهامش</b> &ndash; مساحة فارغة (بالنقاط) حول المعادلة.</li>
+<li dir="rtl"><b>DPI</b> &ndash; دقة الصورة الناتجة؛ تبدو القيم الأعلى أكثر حدة
+عند تكبير الشكل، على حساب ملف أكبر.</li>
+<li dir="rtl"><b>عرض المعاينة</b> &ndash; يحدّث منطقة المعاينة أدناه بالإعدادات
+الحالية.</li>
+<li dir="rtl"><b>إدراج</b> &ndash; لا يكون مفعّلًا إلا بعد نجاح العرض؛ يدرج
+النتيجة ويعود إلى مربع حوار الخصائص.</li>
+</ul>
+
+<h2 dir="rtl">المتطلبات</h2>
+<p dir="rtl">لكي تعمل هذه الميزة يجب عليك تثبيت إما <b>MiKTeX</b> من
+<a href="https://miktex.org">https://miktex.org</a> أو <b>TeX Live</b> من
+<a href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a>.
+يقوم العرض بترجمة المعادلة باستخدام <code>‎pdflatex‎</code> وتحويلها إلى
+صورة نقطية باستخدام <code>‎pdftocairo‎</code> (وهو جزء من Poppler)، ويجب
+أن يكون البرنامجان موجودين في <code>‎PATH‎</code> الخاص بالنظام؛ وإذا لم
+يكن <code>‎pdftocairo‎</code> مضمّنًا في توزيعة LaTeX لديك فثبّت Poppler
+أيضًا.</p>
+
+<p dir="rtl">تُخزَّن الصور الناتجة مؤقتًا: فإعادة عرض المعادلة نفسها بالإعدادات
+نفسها تعيد استخدام الصورة المخزنة فورًا بدلًا من تشغيل
+<code>‎pdflatex‎</code> مرة أخرى. وإعادة فتح <b>إنشاء من LaTeX...</b>
+على شكل صورة يحتوي أصلًا على معادلة ناتجة تملأ المحرر مسبقًا بالمعادلة
+والإعدادات التي أنتجتها، جاهزة لمزيد من التعديل.</p>
+
+<p dir="rtl" class="nav">
+<a href="index.html">&rarr; العودة إلى المساعدة</a>
+</p>
+
+</body>
+</html>

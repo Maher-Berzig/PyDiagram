@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Enregistrer et exporter un diagramme</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Enregistrer et exporter un diagramme</h1>
+
+<h2>Enregistrer</h2>
+<p>Choisissez <b>Fichier &gt; Enregistrer</b> (<code>Ctrl+S</code>)
+pour enregistrer le diagramme dans son fichier <code>.pydia</code>
+&ndash; la première fois, l'emplacement est demandé.
+<b>Fichier &gt; Enregistrer sous...</b> (<code>Ctrl+Shift+S</code>)
+demande toujours l'emplacement, en enregistrant une copie sous un
+nouveau nom ou à un nouvel endroit sans toucher au fichier
+d'origine.</p>
+
+<p><b>Fichier &gt; Tout enregistrer</b> enregistre en une seule
+étape tous les diagrammes ouverts qui comportent des modifications non
+enregistrées, dans l'ordre des onglets. Un diagramme qui a déjà un
+fichier y est écrit directement ; un diagramme jamais enregistré
+demande où l'enregistrer, en proposant le nom de son onglet. Annuler
+l'une de ces invites arrête l'opération à cet endroit &ndash; les
+diagrammes déjà enregistrés le restent. La commande figure aussi dans
+le menu déroulant Enregistrer de la barre d'outils.</p>
+
+<p>Un fichier <code>.pydia</code> conserve tout ce qui concerne le
+diagramme : chaque forme et ses propriétés, les connexions entre les
+formes, les calques et les réglages du canevas &ndash; le rouvrir
+(voir <a href="opening.html">Ouvrir un diagramme</a>) restaure le
+diagramme exactement tel qu'il a été enregistré.</p>
+
+<h2>Exporter</h2>
+<p>Le menu <b>Fichier</b> propose également quatre façons d'exporter
+le diagramme (ou les diagrammes) actuel pour l'utiliser en dehors de
+PyDiagram :</p>
+<ul>
+<li><b>Exporter en PNG...</b> &ndash; une image matricielle du
+diagramme.</li>
+<li><b>Exporter en SVG...</b> &ndash; une image vectorielle
+redimensionnable, modifiable dans d'autres logiciels de dessin
+vectoriel.</li>
+<li><b>Exporter en PDF...</b> &ndash; une petite boîte de dialogue
+liste tous les onglets de diagramme actuellement ouverts, chacun avec
+une case à cocher ; cochez ceux à inclure, utilisez <b>Monter</b> /
+<b>Descendre</b> pour définir leur ordre de page, puis
+<b>Exporter</b> pour tous les écrire dans un seul fichier PDF
+multi-pages.</li>
+<li><b>Exporter en Tikz...</b> &ndash; le code source LaTeX/TikZ du
+diagramme, affiché dans une fenêtre contextuelle avec des boutons
+<b>Copier dans le presse-papiers</b> et <b>Enregistrer sous...</b>
+&ndash; pratique pour inclure directement un diagramme dans un
+document LaTeX. La même fenêtre s'ouvre depuis le bouton Tikz de la
+barre d'outils.</li>
+</ul>
+
+<p>Contrairement à Enregistrer, aucun des quatre exports ci-dessus ne
+modifie le propre fichier <code>.pydia</code> du diagramme ni son état
+Enregistrer/Enregistrer sous &ndash; exportez autant de fois, et dans
+autant de formats, que nécessaire.</p>
+
+<h2><a name="pdf-links"></a>Liens PDF</h2>
+<p>Lorsque plusieurs diagrammes sont exportés dans un seul PDF, toute
+forme peut servir de lien cliquable vers la page d'un autre diagramme.
+Ouvrez la boîte de dialogue Propriétés de la forme (Ctrl+clic dessus,
+ou sélectionnez-la et appuyez sur <code>Alt+Entrée</code> ; pour le
+Texte, clic droit puis <i>Propriétés</i>) et choisissez un diagramme
+dans la liste <b>Lien PDF</b> en bas. La liste contient <i>Aucun</i>
+ainsi que chaque autre diagramme actuellement ouvert dans un onglet,
+affiché par son nom de fichier.</p>
+
+<p>Utilisez ensuite <b>Fichier &gt; Exporter en PDF...</b> : chaque
+forme ayant un lien devient une zone cliquable invisible couvrant la
+forme, et un clic dessus dans un lecteur PDF mène à la page du
+diagramme de destination. Quelques points à connaître :</p>
+<ul>
+<li>Le diagramme de destination doit être coché dans la liste de
+l'export PDF. Sinon, l'export s'arrête avec un message demandant de
+l'inclure.</li>
+<li>Un lien suit le diagramme, pas un numéro de page : changer l'ordre
+des pages avec <b>Monter</b> / <b>Descendre</b> ne le casse jamais.</li>
+<li>Le lien est enregistré dans le fichier <code>.pydia</code> et
+conservé par Copier, Coller et Dupliquer. Enregistrez aussi le
+diagramme de destination, afin que son identité soit stockée dans son
+propre fichier.</li>
+<li>Si la destination n'est plus ouverte, la liste affiche
+<i>Destination indisponible (le document est fermé)</i> et le lien est
+conservé ; rouvrez la destination pour l'utiliser.</li>
+<li>Les liens n'existent que dans l'export PDF &ndash; la forme a le
+même aspect, et les exports PNG, SVG et Tikz ne contiennent pas de
+liens.</li>
+<li>Si vous lancez PyDiagram depuis les sources, le paquet
+<code>pypdf</code> doit être installé (<code>pip install pypdf</code>).</li>
+</ul>
+
+<p class="nav">
+<a href="opening.html">&larr; Précédent : Ouvrir un diagramme</a>
+&nbsp;|&nbsp;
+<a href="index.html">Retour à l'aide</a>
+</p>
+
+</body>
+</html>

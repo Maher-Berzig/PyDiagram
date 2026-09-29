@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Saving and Exporting a Diagram</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Saving and Exporting a Diagram</h1>
+
+<h2>Saving</h2>
+<p>Choose <b>File &gt; Save</b> (<code>Ctrl+S</code>) to save the
+diagram to its <code>.pydia</code> file &ndash; the first time, this
+asks where to save it. <b>File &gt; Save As...</b>
+(<code>Ctrl+Shift+S</code>) always asks, saving a copy under a new
+name or location without touching the original file.</p>
+
+<p><b>File &gt; Save All</b> saves every open diagram that has
+unsaved changes, in one step and in tab order. A diagram that already
+has a file is written straight to it; one that was never saved asks
+where to save it, suggesting its tab name. Cancelling one of those
+prompts stops Save All at that point &ndash; diagrams already saved
+stay saved. Save All is also in the toolbar's Save drop-down.</p>
+
+<p>A <code>.pydia</code> file keeps everything about the diagram:
+every shape and its properties, connections between shapes, layers,
+and canvas settings &ndash; reopening it (see
+<a href="opening.html">Opening a diagram</a>) restores the diagram
+exactly as it was saved.</p>
+
+<h2>Exporting</h2>
+<p>The <b>File</b> menu also offers four ways to export the current
+diagram (or diagrams) for use outside PyDiagram:</p>
+<ul>
+<li><b>Export as PNG...</b> &ndash; a bitmap image of the diagram.</li>
+<li><b>Export as SVG...</b> &ndash; a scalable vector image, editable
+in other vector drawing programs.</li>
+<li><b>Export to PDF...</b> &ndash; a small dialog lists every diagram
+tab currently open, each with a checkbox; check the ones to include,
+use <b>Move Up</b> / <b>Move Down</b> to set their page order, then
+<b>Export</b> to write them all into one multi-page PDF file.</li>
+<li><b>Export as Tikz...</b> &ndash; LaTeX/TikZ source code for the
+diagram, shown in a popup window with <b>Copy to Clipboard</b> and
+<b>Save As...</b> buttons &ndash; handy for including a diagram
+directly in a LaTeX document. The same window opens from the
+toolbar's Tikz button.</li>
+</ul>
+
+<p>Unlike Save, none of the four exports above change the diagram's
+own <code>.pydia</code> file or its Save/Save As state &ndash; export
+as many times, and in as many formats, as needed.</p>
+
+<h2><a name="pdf-links"></a>PDF links</h2>
+<p>When several diagrams are exported to one PDF, any shape can act as
+a clickable link to another diagram's page. Open the shape's
+Properties dialog (Ctrl+click it, or select it and press
+<code>Alt+Return</code>; for Text, right-click and choose
+<i>Properties</i>) and choose a diagram in the <b>PDF Link</b> list at
+the bottom. The list holds <i>None</i> plus every other diagram
+currently open in a tab, shown by file name.</p>
+
+<p>Then use <b>File &gt; Export to PDF...</b>: each shape that has a
+link becomes an invisible clickable area covering the shape, and
+clicking it in a PDF viewer jumps to the page of the destination
+diagram. A few things to know:</p>
+<ul>
+<li>The destination diagram must be checked in the Export to PDF list.
+Otherwise the export stops with a message asking you to include
+it.</li>
+<li>A link follows the diagram, not a page number: reordering pages
+with <b>Move Up</b> / <b>Move Down</b> never breaks it.</li>
+<li>The link is saved in the <code>.pydia</code> file and is kept by
+Copy, Paste and Duplicate. Save the destination diagram too, so that
+its identity is stored in its own file.</li>
+<li>If the destination is no longer open, the list shows
+<i>Unavailable destination (document is closed)</i> and the link is
+kept; open the destination again to use it.</li>
+<li>Links exist only in the PDF export &ndash; the shape looks the
+same, and PNG, SVG and Tikz exports do not contain links.</li>
+<li>When running PyDiagram from source, the <code>pypdf</code> package
+must be installed (<code>pip install pypdf</code>).</li>
+</ul>
+
+<p class="nav">
+<a href="opening.html">&larr; Back: Opening a diagram</a>
+&nbsp;|&nbsp;
+<a href="index.html">Back to Help</a>
+</p>
+
+</body>
+</html>

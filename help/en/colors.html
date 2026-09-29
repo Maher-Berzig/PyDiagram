@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Colors, Gradients and Patterns</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Colors, Gradients and Patterns</h1>
+
+<p>Every fill/border color swatch in PyDiagram &ndash; in a shape's
+Properties dialog, in the toolbox's default-properties panel, or in
+Diagram Properties &ndash; opens the same picker when clicked, with a
+choice of three kinds of fill:</p>
+
+<h2>Solid Color</h2>
+<p>The ordinary color picker, alpha channel (transparency) included.</p>
+
+<h2>Gradient...</h2>
+<p>A two-color gradient between a <b>Start Color</b> and an
+<b>End Color</b>, in one of two shapes, chosen with the
+<b>Linear</b> / <b>Radial</b> buttons at the top of the dialog:</p>
+<ul>
+<li><b>Linear</b> &ndash; the color changes along a straight line
+across the shape. Set the exact angle with the <b>Direction</b> spin
+box, or click one of the eight arrow buttons below it for a common
+direction (left-to-right, top-to-bottom, diagonals, and so on).</li>
+<li><b>Radial</b> &ndash; the color spreads outward from a single
+point, starting at the point (Start Color) and fading to End Color
+at the shape's farthest edge. The point starts at the shape's center;
+click or drag anywhere on the preview strip at the top of the dialog
+to move it &ndash; the gradient recenters live as you drag, and stays
+wherever you leave it.</li>
+</ul>
+<p>The preview strip at the top always shows the gradient as it will
+actually look. A gradient automatically resizes to fit whatever shape
+it's filling, so it still looks right if you resize the shape
+afterwards.</p>
+
+<h2>Pattern...</h2>
+<p>A repeating tile fill, with:</p>
+<ul>
+<li><b>Pattern</b> &ndash; one of several built-in hatch/dot patterns,
+or <b>Image...</b> to use a picture file of your own as the
+repeating tile instead.</li>
+<li><b>Pattern Color</b> / <b>Background Color</b> &ndash; the two
+colors of a built-in pattern.</li>
+<li><b>Pattern Size</b> and <b>Line Width</b> &ndash; how large each
+tile is, and how thick its lines are.</li>
+<li><b>Image File</b>, <b>Tile Width</b> and <b>Tile Height</b>
+&ndash; shown instead of the above when <b>Image...</b> is chosen:
+browse to a picture and set the size of each repeated tile.</li>
+<li><b>Pattern Angle</b> &ndash; rotates the whole tiling.</li>
+</ul>
+
+<p>Whichever kind of fill a shape ends up with, its swatch button
+always shows a small preview of the actual result, and reopening the
+picker later shows the Gradient or Pattern dialog prefilled with
+whatever was set before &ndash; including a radial gradient's control
+point, right where you left it.</p>
+
+<p class="nav">
+<a href="index.html">&larr; Back to Help</a>
+</p>
+
+</body>
+</html>

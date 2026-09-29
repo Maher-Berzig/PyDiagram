@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Couleurs, dégradés et motifs</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Couleurs, dégradés et motifs</h1>
+
+<p>Chaque nuancier de couleur de remplissage/bordure dans PyDiagram
+&ndash; dans la boîte de dialogue Propriétés d'une forme, dans le
+panneau des propriétés par défaut de la boîte à outils, ou dans les
+Propriétés du diagramme &ndash; ouvre le même sélecteur lorsqu'on
+clique dessus, avec le choix entre trois types de remplissage :</p>
+
+<h2>Couleur unie</h2>
+<p>Le sélecteur de couleur ordinaire, canal alpha (transparence)
+compris.</p>
+
+<h2>Dégradé...</h2>
+<p>Un dégradé à deux couleurs entre une <b>Couleur de début</b> et une
+<b>Couleur de fin</b>, de l'une des deux formes suivantes, choisie avec
+les boutons <b>Linéaire</b> / <b>Radial</b> en haut de la boîte de
+dialogue :</p>
+<ul>
+<li><b>Linéaire</b> &ndash; la couleur change le long d'une ligne
+droite à travers la forme. Réglez l'angle exact avec le champ
+<b>Direction</b>, ou cliquez sur l'un des huit boutons fléchés
+en dessous pour une direction courante (de gauche à droite, de haut en
+bas, diagonales, etc.).</li>
+<li><b>Radial</b> &ndash; la couleur se propage vers l'extérieur à
+partir d'un point unique, en partant de ce point (Couleur de début) et
+en s'estompant vers la Couleur de fin au bord le plus éloigné de la
+forme. Le point est initialement au centre de la forme ; cliquez ou
+faites glisser n'importe où sur la bande d'aperçu en haut de la boîte
+de dialogue pour le déplacer &ndash; le dégradé se recentre en direct
+pendant le glissement, et reste là où vous l'avez laissé.</li>
+</ul>
+<p>La bande d'aperçu en haut montre toujours le dégradé tel qu'il
+apparaîtra réellement. Un dégradé s'adapte automatiquement à la forme
+qu'il remplit, et reste donc correct si vous redimensionnez la forme
+par la suite.</p>
+
+<h2>Motif...</h2>
+<p>Un remplissage par tuile répétée, avec :</p>
+<ul>
+<li><b>Motif</b> &ndash; l'un des nombreux motifs de hachures/points
+intégrés, ou <b>Image...</b> pour utiliser un fichier image de votre
+choix comme tuile répétée.</li>
+<li><b>Couleur du motif</b> / <b>Couleur d'arrière-plan</b> &ndash;
+les deux couleurs d'un motif intégré.</li>
+<li><b>Taille du motif</b> et <b>Épaisseur de ligne</b> &ndash; la
+taille de chaque tuile et l'épaisseur de ses lignes.</li>
+<li><b>Fichier image</b>, <b>Largeur de tuile</b> et <b>Hauteur de
+tuile</b> &ndash; affichés à la place des champs ci-dessus lorsque
+<b>Image...</b> est choisi : sélectionnez une image et définissez la
+taille de chaque tuile répétée.</li>
+<li><b>Angle du motif</b> &ndash; fait pivoter l'ensemble du
+pavage.</li>
+</ul>
+
+<p>Quel que soit le type de remplissage d'une forme, son bouton de
+nuancier affiche toujours un petit aperçu du résultat réel, et rouvrir
+le sélecteur plus tard affiche la boîte de dialogue Dégradé ou Motif
+préremplie avec les valeurs précédentes &ndash; y compris le point de
+contrôle d'un dégradé radial, exactement là où vous l'aviez
+laissé.</p>
+
+<p class="nav">
+<a href="index.html">&larr; Retour à l'aide</a>
+</p>
+
+</body>
+</html>

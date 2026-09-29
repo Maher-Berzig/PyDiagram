@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Editing and Selecting</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Editing and Selecting</h1>
+
+<h2>The Edit menu</h2>
+<ul>
+<li><b>Undo</b> / <b>Redo</b> &ndash; <code>Ctrl+Z</code> /
+<code>Ctrl+Shift+Z</code>. Every open diagram has its own independent
+undo history.</li>
+<li><b>Copy</b> / <b>Cut</b> / <b>Paste</b> &ndash; <code>Ctrl+C</code>
+/ <code>Ctrl+X</code> / <code>Ctrl+V</code>. You can paste into a
+different diagram tab than the one you copied from.</li>
+<li><b>Clone</b> &ndash; <code>Ctrl+B</code>, opens a copy of the
+whole current diagram in a new tab.</li>
+<li><b>Duplicate</b> &ndash; <code>Ctrl+D</code>, a quick copy-and-paste
+of the current selection in one step.</li>
+<li><b>Delete</b> &ndash; the <code>Delete</code> key, removes the
+current selection.</li>
+</ul>
+
+<h2>The Select menu</h2>
+<p>Beyond clicking shapes directly (Shift/Ctrl-click to add to the
+selection, or drag a rubber-band box around several at once), the
+<b>Select</b> menu offers:</p>
+<ul>
+<li><b>All</b> (<code>Ctrl+A</code>) / <b>None</b> &ndash; select
+everything on the current layer, or clear the selection.</li>
+<li><b>Invert</b> (<code>Ctrl+I</code>) &ndash; swap selected and
+unselected shapes.</li>
+<li><b>Same Type</b> &ndash; extends the selection to every other
+shape of the same type as what's currently selected.</li>
+<li><b>Transitive</b> &ndash; extends the selection outward along
+connected lines, following the chain of connections as far as it
+goes.</li>
+<li><b>Connected</b> &ndash; extends the selection to shapes directly
+connected to the current one(s) by a line, one hop only.</li>
+</ul>
+
+<p>The Diagram Tree panel also supports Shift/Ctrl-click multi-selection,
+which can be a convenient way to build up a selection for
+<b>Group</b> when shapes overlap on the canvas &ndash; see
+<a href="diagram-tree.html">The Diagram Tree</a>.</p>
+
+<p class="nav">
+<a href="index.html">&larr; Back to Help</a>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Layers</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Layers</h1>
+
+<p>The <b>Layers</b> panel (<code>F8</code> to show/hide it) lists
+every layer in the current diagram, top of the stack first.</p>
+
+<ul>
+<li><b>Checkbox</b> &ndash; toggles that layer's visibility on the
+canvas, without changing which layer is current or selecting the
+row.</li>
+<li><b>Clicking a row</b> &ndash; makes that layer the current one:
+newly drawn shapes are added to it, and only its own shapes can be
+selected on the canvas.</li>
+<li><b>Double-clicking a row's name</b> &ndash; renames that
+layer.</li>
+<li><b>New</b> &ndash; adds a new layer, asking for its name.</li>
+<li><b>Up</b> / <b>Down</b> &ndash; moves the selected layer higher
+or lower in the stacking order.</li>
+<li><b>Del</b> &ndash; deletes the selected layer (and everything on
+it). The last remaining layer can't be deleted.</li>
+</ul>
+
+<p>Each open diagram has its own independent set of layers, just as
+it has its own undo history (see
+<a href="opening.html">Opening a diagram</a>).</p>
+
+<p class="nav">
+<a href="index.html">&larr; Back to Help</a>
+</p>
+
+</body>
+</html>

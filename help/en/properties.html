@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shape Properties</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Shape Properties</h1>
+
+<p>Ctrl+click any shape (or select it and press
+<code>Alt+Return</code>) to open its Properties dialog. Text is the
+one exception: since double-click already enters its own inline
+editing mode, its Properties dialog is instead reached by
+right-clicking it and choosing <i>Properties</i>. What's in it
+depends on the kind of shape, but most share a common core:</p>
+
+<ul>
+<li><b>Fill color</b> and/or <b>Border color</b> &ndash; solid,
+gradient or pattern; see
+<a href="colors.html">Colors, gradients and patterns</a>.</li>
+<li><b>Border width</b> and <b>Border style</b> &ndash; Solid,
+Dashed, Dash-Dot, Dash-Dot-Dot, or Dotted.</li>
+<li><b>Draw background</b> &ndash; some shapes can be drawn with no
+fill at all (outline only) by unchecking this.</li>
+<li><b>PDF Link</b> &ndash; at the bottom of every shape's dialog
+(Text included): pick another open diagram to make the shape a
+clickable link to it in exported PDFs. See
+<a href="saving.html#pdf-links">PDF links</a>.</li>
+</ul>
+
+<h2>Shape-specific fields</h2>
+<ul>
+<li><b>Box (Rectangle)</b> &ndash; corner rounding, in addition to
+the fields above.</li>
+<li><b>Line, Polyline, Zigzagline, Bezierline, Arc</b> &ndash; a
+line color, width and style, plus independent Start arrow and End
+arrow styles &ndash; see
+<a href="connections.html">Connecting shapes with lines</a>.</li>
+<li><b>Regular Polygon / Star</b> &ndash; number of sides/points and
+corner rounding (and, for Star, an inner and outer corner
+rounding).</li>
+<li><b>Three-Quarter Circle</b> and <b>Spiral</b> &ndash; their own
+shape parameters alongside the common fill/border fields.</li>
+<li><b>Class</b> (UML) &ndash; class name, an Attributes list and an
+Operations list (one per line), and a fill color.</li>
+<li><b>Image</b> &ndash; the image file path, a <b>Browse...</b>
+button to pick one, and a <b>Create from LaTeX...</b> button; see
+<a href="latex-equations.html">Inserting LaTeX equations</a>.</li>
+<li><b>Text</b> &ndash; the text itself, font family and weight
+(Normal/Bold/Italic/Bold-Italic), size, alignment
+(Left/Center/Right), text color, fill color, and whether to draw a
+background behind the text.</li>
+<li><b>Plot</b> &ndash; see below.</li>
+</ul>
+
+<h2>The Plot shape</h2>
+<p>Plot draws the graph of up to two functions of <code>x</code>,
+with its Properties dialog split across three tabs:</p>
+<ul>
+<li><b>Functions &amp; Range</b> &ndash; the expressions
+<code>f1(x)</code> and <code>f2(x)</code>, each with its own line
+color; the X and Y axis ranges; an X range (<b>Fill x1</b> /
+<b>Fill x2</b>) to shade the area under a curve; and the number of
+sample points used to draw it.</li>
+<li><b>Axes &amp; Ticks</b> &ndash; the axis style, whether to show a
+background grid, whether to show X/Y tick labels, and the interval
+between ticks (or <i>Auto</i>).</li>
+<li><b>Lines &amp; Fill</b> &ndash; the curve line width; an
+<i>x1/x2 boundary lines</i> group (their colors, width, style, dash
+length, and whether to show them at all); and a <i>Curves and fill</i>
+group for the color filling the area between the curves and the
+axis/border color.</li>
+</ul>
+
+<p class="nav">
+<a href="index.html">&larr; Back to Help</a>
+</p>
+
+</body>
+</html>

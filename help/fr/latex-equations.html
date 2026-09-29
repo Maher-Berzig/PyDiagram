@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Insérer des équations LaTeX</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Insérer des équations LaTeX</h1>
+
+<p align="center"><img src="../images/latex-equations.png" width="640" alt="Capture d'écran : une équation LaTeX insérée dans un diagramme, avec un titre en anglais, en arabe et en français"></p>
+
+<p>La boîte de dialogue Propriétés d'une forme Image possède un bouton
+<b>Créer à partir de LaTeX...</b> à côté du sélecteur de fichier
+<b>Parcourir...</b> habituel (voir
+<a href="properties.html">Propriétés des formes</a>). Il ouvre un petit
+éditeur d'équations qui convertit une équation LaTeX en image et
+l'insère exactement comme si vous aviez sélectionné un fichier
+image.</p>
+
+<h2>Utiliser l'éditeur</h2>
+<ul>
+<li><b>Préambule</b> &ndash; lignes de préambule LaTeX supplémentaires,
+par ex. <code>\usepackage{amsthm}</code>, pour les paquets dont le
+contenu ci-dessous a besoin.</li>
+<li><b>LaTeX</b> &ndash; saisissez n'importe quel contenu LaTeX : une
+expression mathématique, par ex.
+<code>\frac{-b \pm \sqrt{b^2-4ac}}{2a}</code>, ou un bloc complet de
+texte et de mathématiques tel qu'un théorème
+(<code>\begin{theorem}...\end{theorem}</code>) utilisant le préambule
+ci-dessus.</li>
+<li><b>Couleur du texte</b> / <b>Couleur d'arrière-plan</b> &ndash; les
+couleurs de l'image générée.</li>
+<li><b>Marge</b> &ndash; espace vide (en points) autour de
+l'équation.</li>
+<li><b>DPI</b> &ndash; résolution de l'image générée ; des valeurs plus
+élevées donnent un rendu plus net lorsque la forme est agrandie, au
+prix d'un fichier plus volumineux.</li>
+<li><b>Afficher l'aperçu</b> &ndash; met à jour la zone d'aperçu
+ci-dessous avec les réglages actuels.</li>
+<li><b>Insérer</b> &ndash; disponible seulement après un rendu réussi ;
+insère le résultat et revient à la boîte de dialogue Propriétés.</li>
+</ul>
+
+<h2>Prérequis</h2>
+<p>Pour que cette fonctionnalité marche, vous devez installer soit
+<b>MiKTeX</b> (<a href="https://miktex.org">https://miktex.org</a>), soit
+<b>TeX Live</b>
+(<a href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a>).
+Le rendu compile l'équation avec <code>pdflatex</code> et la convertit
+en image matricielle avec <code>pdftocairo</code> (fourni par Poppler) ;
+les deux programmes doivent être trouvables dans le <code>PATH</code> du
+système. Si <code>pdftocairo</code> n'est pas inclus dans votre
+distribution LaTeX, installez aussi Poppler.</p>
+
+<p>Les images générées sont mises en cache : refaire le rendu de la même
+équation avec les mêmes réglages réutilise instantanément l'image en
+cache au lieu de relancer <code>pdflatex</code>. Rouvrir <b>Créer à
+partir de LaTeX...</b> sur une forme Image contenant déjà une équation
+générée préremplit l'éditeur avec l'équation et les réglages qui l'ont
+produite, prêts à être ajustés.</p>
+
+<p class="nav">
+<a href="index.html">&larr; Retour à l'aide</a>
+</p>
+
+</body>
+</html>

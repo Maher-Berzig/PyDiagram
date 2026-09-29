@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Modifier et sélectionner</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Modifier et sélectionner</h1>
+
+<h2>Le menu Édition</h2>
+<ul>
+<li><b>Annuler</b> / <b>Rétablir</b> &ndash; <code>Ctrl+Z</code> /
+<code>Ctrl+Shift+Z</code>. Chaque diagramme ouvert possède son propre
+historique d'annulation indépendant.</li>
+<li><b>Copier</b> / <b>Couper</b> / <b>Coller</b> &ndash;
+<code>Ctrl+C</code> / <code>Ctrl+X</code> / <code>Ctrl+V</code>. Vous
+pouvez coller dans un autre onglet de diagramme que celui d'où vous
+avez copié.</li>
+<li><b>Cloner</b> &ndash; <code>Ctrl+B</code>, ouvre une copie de
+l'ensemble du diagramme actuel dans un nouvel onglet.</li>
+<li><b>Dupliquer</b> &ndash; <code>Ctrl+D</code>, un copier-coller
+rapide de la sélection actuelle en une seule étape.</li>
+<li><b>Supprimer</b> &ndash; la touche <code>Suppr</code>, supprime la
+sélection actuelle.</li>
+</ul>
+
+<h2>Le menu Sélection</h2>
+<p>Outre le clic direct sur les formes (Maj/Ctrl+clic pour ajouter à la
+sélection, ou tracé d'un rectangle de sélection autour de plusieurs
+formes à la fois), le menu <b>Sélection</b> propose :</p>
+<ul>
+<li><b>Tous</b> (<code>Ctrl+A</code>) / <b>Aucun</b> &ndash; sélectionne
+tout ce qui se trouve sur le calque actuel, ou efface la
+sélection.</li>
+<li><b>Inverser</b> (<code>Ctrl+I</code>) &ndash; échange les formes
+sélectionnées et non sélectionnées.</li>
+<li><b>Même type</b> &ndash; étend la sélection à toutes les autres
+formes du même type que celles actuellement sélectionnées.</li>
+<li><b>Transitif</b> &ndash; étend la sélection de proche en proche le
+long des lignes connectées, en suivant la chaîne de connexions aussi
+loin qu'elle va.</li>
+<li><b>Connectés</b> &ndash; étend la sélection aux formes directement
+reliées par une ligne à celles actuellement sélectionnées, un seul
+saut.</li>
+</ul>
+
+<p>Le panneau Arbre du diagramme prend aussi en charge la sélection
+multiple par Maj/Ctrl+clic, ce qui peut être un moyen pratique de
+constituer une sélection pour <b>Grouper</b> lorsque des formes se
+chevauchent sur le canevas &ndash; voir
+<a href="diagram-tree.html">L'arbre du diagramme</a>.</p>
+
+<p class="nav">
+<a href="index.html">&larr; Retour à l'aide</a>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Propriétés des formes</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Propriétés des formes</h1>
+
+<p>Ctrl+clic sur n'importe quelle forme (ou sélectionnez-la et
+appuyez sur <code>Alt+Entrée</code>) pour ouvrir sa boîte de dialogue
+Propriétés. Le texte fait exception : comme le double-clic active
+déjà son propre mode d'édition en ligne, sa boîte de dialogue
+Propriétés s'ouvre par un clic droit et le choix de
+<i>Propriétés</i>. Le contenu dépend du type de forme, mais la
+plupart partagent un socle commun :</p>
+
+<ul>
+<li><b>Couleur de remplissage</b> et/ou <b>Couleur de bordure</b>
+&ndash; unie, dégradé ou motif ; voir
+<a href="colors.html">Couleurs, dégradés et motifs</a>.</li>
+<li><b>Épaisseur de bordure</b> et <b>Style de bordure</b> &ndash;
+Plein, Tirets, Tiret-point, Tiret-point-point ou Pointillé.</li>
+<li><b>Dessiner l'arrière-plan</b> &ndash; certaines formes peuvent
+être dessinées sans aucun remplissage (contour seul) en décochant
+cette option.</li>
+<li><b>Lien PDF</b> &ndash; en bas de la boîte de dialogue de chaque
+forme (Texte compris) : choisissez un autre diagramme ouvert pour que la
+forme devienne un lien cliquable vers celui-ci dans les PDF exportés.
+Voir <a href="saving.html#pdf-links">Liens PDF</a>.</li>
+</ul>
+
+<h2>Champs propres à chaque forme</h2>
+<ul>
+<li><b>Boîte (Rectangle)</b> &ndash; l'arrondi des coins, en plus des
+champs ci-dessus.</li>
+<li><b>Ligne, Polyligne, Ligne en zigzag, Ligne de Bézier, Arc</b>
+&ndash; une couleur, une épaisseur et un style de ligne, ainsi que des
+styles de Flèche de début et de Flèche de fin indépendants &ndash;
+voir <a href="connections.html">Relier des formes par des
+lignes</a>.</li>
+<li><b>Polygone régulier / Étoile</b> &ndash; le nombre de côtés/de
+pointes et l'arrondi des coins (et, pour l'Étoile, un arrondi distinct
+des coins intérieurs et extérieurs).</li>
+<li><b>Cercle aux trois quarts</b> et <b>Spirale</b> &ndash; leurs
+propres paramètres de forme, en plus des champs communs de
+remplissage/bordure.</li>
+<li><b>Classe</b> (UML) &ndash; le nom de la classe, une liste
+d'Attributs et une liste d'Opérations (une par ligne), et une couleur
+de remplissage.</li>
+<li><b>Image</b> &ndash; le chemin du fichier image, un bouton
+<b>Parcourir...</b> pour en choisir un, et un bouton <b>Créer à partir
+de LaTeX...</b> ; voir
+<a href="latex-equations.html">Insérer des équations LaTeX</a>.</li>
+<li><b>Texte</b> &ndash; le texte lui-même, la famille et la graisse
+de police (Normal/Gras/Italique/Gras-Italique), la taille,
+l'alignement (Gauche/Centre/Droite), la couleur du texte, la couleur
+de remplissage, et l'option de dessiner ou non un arrière-plan derrière
+le texte.</li>
+<li><b>Graphe</b> &ndash; voir ci-dessous.</li>
+</ul>
+
+<h2>La forme Graphe</h2>
+<p>Graphe trace la courbe d'un maximum de deux fonctions de
+<code>x</code>, avec une boîte de dialogue Propriétés répartie sur
+trois onglets :</p>
+<ul>
+<li><b>Fonctions et plage</b> &ndash; les expressions
+<code>f1(x)</code> et <code>f2(x)</code>, chacune avec sa propre
+couleur de ligne ; les plages des axes X et Y ; une plage X
+(<b>Remplir x1</b> / <b>Remplir x2</b>) pour colorier l'aire sous une
+courbe ; et le nombre de points d'échantillonnage utilisés pour la
+tracer.</li>
+<li><b>Axes et graduations</b> &ndash; le style des axes, l'affichage
+ou non d'une grille d'arrière-plan, l'affichage ou non des étiquettes
+de graduation X/Y, et l'intervalle entre les graduations (ou
+<i>Auto</i>).</li>
+<li><b>Lignes et remplissage</b> &ndash; l'épaisseur de la courbe ;
+un groupe <i>Lignes limites x1/x2</i> (leurs couleurs, épaisseur,
+style, longueur des tirets, et leur affichage ou non) ; et un groupe
+<i>Courbes et remplissage</i> pour la couleur remplissant l'aire entre
+les courbes et l'axe, ainsi que la couleur des axes/de la
+bordure.</li>
+</ul>
+
+<p class="nav">
+<a href="index.html">&larr; Retour à l'aide</a>
+</p>
+
+</body>
+</html>

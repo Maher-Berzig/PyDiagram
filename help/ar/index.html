@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>مساعدة PyDiagram</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+  .topics li { margin: 2px 0; }
+  .topics a { font-weight: bold; }
+</style>
+</head>
+<body dir="rtl">
+
+<h1 dir="rtl">مساعدة PyDiagram</h1>
+
+<p dir="rtl">PyDiagram محرر مخططات لرسم مخططات التدفق ومخططات UML والمخططات
+ثنائية الأبعاد العامة: ضع الأشكال على اللوحة، واربطها بخطوط، ونظّمها في
+طبقات، ثم صدّر النتيجة.</p>
+
+<h2 dir="rtl">المواضيع</h2>
+<ul dir="rtl" class="topics">
+<li dir="rtl"><a href="opening.html">فتح مخطط</a></li>
+<li dir="rtl"><a href="saving.html">حفظ المخطط وتصديره</a></li>
+<li dir="rtl"><a href="toolbox.html">صندوق الأدوات ورسم الأشكال</a></li>
+<li dir="rtl"><a href="connections.html">ربط الأشكال بالخطوط</a></li>
+<li dir="rtl"><a href="properties.html">خصائص الأشكال</a></li>
+<li dir="rtl"><a href="colors.html">الألوان والتدرجات والأنماط</a></li>
+<li dir="rtl"><a href="editing.html">التحرير والتحديد</a></li>
+<li dir="rtl"><a href="arranging.html">ترتيب الكائنات</a></li>
+<li dir="rtl"><a href="layers.html">الطبقات</a></li>
+<li dir="rtl"><a href="diagram-tree.html">شجرة المخطط</a></li>
+<li dir="rtl"><a href="diagram-properties.html">الشبكة والمحاذاة وخصائص المخطط</a></li>
+<li dir="rtl"><a href="view-zoom.html">التكبير واللوحات</a></li>
+<li dir="rtl"><a href="custom-shapes.html">الأشكال المخصصة</a></li>
+<li dir="rtl"><a href="latex-equations.html">إدراج معادلات LaTeX</a></li>
+<li dir="rtl"><a href="keyboard-shortcuts.html">اختصارات لوحة المفاتيح (القائمة الكاملة)</a></li>
+</ul>
+
+<h2 dir="rtl">الأساسيات</h2>
+<ul dir="rtl">
+<li dir="rtl"><b>صندوق الأدوات</b> &ndash; اللوحة الجانبية تحتوي على جميع
+الأشكال، مجمعة في علامات تبويب: <b>أساسي</b> و<b>مخطط تدفق</b>
+و<b>UML</b> و<b>متنوع</b>، إضافة إلى أي فئات مخصصة لديك. انقر زر شكل
+ثم اسحب على اللوحة لرسمه.</li>
+<li dir="rtl"><b>التحريك وتغيير الحجم</b> &ndash; انقر أداة <b>تحديد</b> (أو اضغط
+<code>‎Space‎</code> للعودة إليها في أي وقت) ثم اسحب شكلًا لتحريكه، أو
+اسحب أحد مقابض زواياه لتغيير حجمه.</li>
+<li dir="rtl"><b>ربط الأشكال</b> &ndash; ارسم <b>خطًا</b> يبدأ أو ينتهي عند إحدى
+نقاط الاتصال الصغيرة &ldquo;⨉&rdquo; في شكل آخر؛ عندها يتبع الخط ذلك
+الشكل أينما تحرك. استخدم أداة <b>نقطة ربط</b> لإضافة نقاط اتصال خاصة بك
+إلى شكل محدد.</li>
+<li dir="rtl"><b>الألوان</b> &ndash; يمكن أن يكون كل زر لون تعبئة/حد لونًا ثابتًا،
+أو تدرجًا بلونين (خطيًا أو شعاعيًا)، أو نمطًا متكررًا &ndash; راجع
+<a href="colors.html">الألوان والتدرجات والأنماط</a>.</li>
+<li dir="rtl"><b>التدوير / القلب</b> &ndash; من قائمة <b>الكائنات</b> أو من شريط
+الأدوات، لتدوير شكل دون الحاجة إلى نسخة معكوسة منفصلة. يقوم
+<code>‎Ctrl+R‎</code> / <code>‎Ctrl+Shift+R‎</code> بتدوير التحديد
++1&deg; / &minus;1&deg;، ويقلبه <code>‎Ctrl+Shift+H‎</code> /
+<code>‎Ctrl+Shift+V‎</code> أفقيًا / عموديًا.</li>
+<li dir="rtl"><b>الخصائص</b> &ndash; انقر على شكل مع الضغط على Ctrl (أو حدده
+واضغط <code>‎Alt+Return‎</code>) لتعديل ألوانه ونمط خطه وأي معلمات حجم
+يملكها.</li>
+<li dir="rtl"><b>الطبقات</b> &ndash; تتحكم لوحة الطبقات في الطبقة التي تُضاف إليها
+الأشكال الجديدة، ويمكنها إظهار الطبقات أو إخفاءها أو قفلها أو إعادة
+ترتيبها.</li>
+<li dir="rtl"><b>روابط PDF</b> &ndash; يمكن لشكل أن يشير إلى مخطط آخر في ملف
+PDF مصدَّر &ndash; راجع <a href="saving.html#pdf-links">روابط PDF</a>.</li>
+<li dir="rtl"><b>تراجع / إعادة</b> &ndash; <code>‎Ctrl+Z‎</code> /
+<code>‎Ctrl+Shift+Z‎</code>، لكل ما سبق.</li>
+</ul>
+
+</body>
+</html>

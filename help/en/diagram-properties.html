@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grid, Snapping and Diagram Properties</title>
+<style>
+  body { font-family: Sans-Serif; font-size: 10.5pt; margin: 12px; }
+  h1 { color: #1b4f8a; }
+  h2 { color: #1b4f8a; margin-top: 20px; }
+  code { background-color: #f0f0f0; padding: 1px 4px; }
+  .nav { margin-top: 26px; color: #555555; }
+</style>
+</head>
+<body>
+
+<h1>Grid, Snapping and Diagram Properties</h1>
+
+<p><b>Diagram &gt; Properties...</b> opens a dialog with three
+tabs:</p>
+
+<h2>Paper Sizes tab</h2>
+<ul>
+<li><b>Paper size</b> &ndash; <i>Best Fit</i> (the canvas simply
+grows to fit whatever is drawn, with no fixed page boundary), any of
+the standard ISO <b>A0</b>&ndash;<b>A10</b> or <b>B0</b>&ndash;<b>B10</b>
+sizes (each listed with its width &times; height in millimeters), or
+<i>Custom Size</i>.</li>
+<li><b>Paper orientation</b> &ndash; <i>portrait</i> or
+<i>landscape</i>; landscape swaps the selected size's width and
+height.</li>
+<li><b>Custom width</b> / <b>Custom height</b> &ndash; the page's
+dimensions in millimeters; only enabled while Paper size is set to
+<i>Custom Size</i>.</li>
+</ul>
+
+<p>Whichever paper size is chosen is drawn on the canvas as a page
+boundary: shapes outside it stay fully editable, but page-based
+exports (PNG, SVG, PDF) clip to it. Under <i>Best Fit</i> no boundary
+is drawn, and exports instead use a rectangle that follows the
+diagram's own content, with a small margin. The chosen paper size,
+orientation and custom dimensions also become the default for every
+new diagram tab afterwards.</p>
+
+<h2>Grid tab</h2>
+<ul>
+<li><b>Visible</b> &ndash; shows or hides the grid lines.</li>
+<li><b>Snap to</b> &ndash; snaps shapes to the grid while drawing or
+moving them.</li>
+<li><b>X Size</b> / <b>Y Size</b> &ndash; independent horizontal and
+vertical grid spacing.</li>
+<li><b>Color</b> &ndash; the grid lines' color.</li>
+</ul>
+
+<h2>Colors tab</h2>
+<ul>
+<li><b>Background</b> &ndash; the diagram canvas's background
+color.</li>
+</ul>
+
+<h2>Quick toggles in the View menu</h2>
+<p>The same Grid visibility and Snap to Grid settings, plus two more,
+are also available as quick checkboxes in the <b>View</b> menu, for
+changing them without opening the dialog:</p>
+<ul>
+<li><b>Show Grid</b> / <b>Snap To Grid</b></li>
+<li><b>Snap To Objects</b> &ndash; snaps to other shapes' edges and
+connection points as you draw or move things, in addition to (or
+instead of) the grid.</li>
+<li><b>Show Connection Points</b> &ndash; shows or hides every
+shape's &ldquo;⨉&rdquo; connection points; see
+<a href="connections.html">Connecting shapes with lines</a>.</li>
+<li><b>Show Rulers</b> &ndash; shows or hides the horizontal/vertical
+rulers along the canvas edges.</li>
+</ul>
+
+<p class="nav">
+<a href="index.html">&larr; Back to Help</a>
+</p>
+
+</body>
+</html>
